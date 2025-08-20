@@ -46,7 +46,7 @@ const VideoMessage = () => {
           ) : (
             <div className="relative bg-black rounded-lg overflow-hidden">
               <video
-                src={"/src/assets/LK.mp4"}
+                src={"/Vids/LK.mp4"}
                 controls
                 autoPlay
                 className="w-full"

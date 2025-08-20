@@ -5,55 +5,55 @@ import { ChevronLeft, ChevronRight, Heart } from 'lucide-react';
 const photos = [
   {
     id: 1,
-    url: "../src/assets/Img1.jpg",
+    url: "/Imgs/Img1.jpg",
     caption: "Where it all began ✨",
     category: "childhood"
   },
   {
     id: 2,
-    url: "../src/assets/Img3.jpg",
+    url: "/Imgs/Img3.jpg",
     caption: "Standing by you at all times 🌟",
     category: "growing_up"
   },
   {
     id: 3,
-    url: "../src/assets/Img2.jpg",
+    url: "/Imgs/Img2.jpg",
     caption: "The moment my world changed forever 💫",
     category: "us"
   },
   {
     id: 4,
-    url: "../src/assets/Img4.jpg",
+    url: "/Imgs/Img4.jpg",
     caption: "Our first date - the beginning of countless memories 🗺️",
     category: "us"
   },
   {
     id: 5,
-    url: "../src/assets/Img5.jpg",
+    url: "/Imgs/Img5.jpg",
     caption: "Being together 🎉",
     category: "achievements"
   },
   {
     id: 6,
-    url: "../src/assets/Img6.jpg",
+    url: "/Imgs/Img6.jpg",
     caption: "This will always be special 💕",
     category: "recent"
   },
   {
     id: 7,
-    url: "../src/assets/Img7.jpg",
+    url: "/Imgs/Img7.jpg",
     caption: "When my family felt you as their own ✨",
     category: "us"
   },
   {
     id: 8,
-    url: "../src/assets/Img8.jpg",
+    url: "/Imgs/Img8.jpg",
     caption: "Still making me fall in love with you over and over 💕",
     category: "achievements"
   },
   {
     id: 9,
-    url: "../src/assets/Img9.jpg",
+    url: "/Imgs/Img9.jpg",
     caption: "This one's special 🌟",
     category: "recent"
   }
