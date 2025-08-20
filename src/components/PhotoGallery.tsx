@@ -88,11 +88,11 @@ const PhotoGallery = () => {
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="elegant-heading text-5xl md:text-6xl font-bold mb-6 text-gradient-romantic">
+          <h2 className="elegant-heading text-5xl md:text-5xl font-bold mb-6 text-gradient-romantic">
             Our Story in Photos
           </h2>
           <p className="love-quote text-xl max-w-2xl mx-auto">
-            From your beautiful beginnings to the precious moments we've shared together - 
+            From our beautiful beginnings to the precious moments we've shared together - 
             each photo tells a piece of our love story.
           </p>
         </div>

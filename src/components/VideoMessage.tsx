@@ -2,14 +2,14 @@ import { Play, Heart, Camera } from 'lucide-react';
 import { useState } from 'react';
 
 const VideoMessage = () => {
-  const [showVideoPlaceholder, setShowVideoPlaceholder] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
 
   return (
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-16">
-          <h2 className="elegant-heading text-5xl md:text-6xl font-bold mb-6 text-gradient-romantic">
-            A Special Message for You
+          <h2 className="elegant-heading text-5xl md:text-5xl font-bold mb-6 text-gradient-romantic">
+            A Special Video for You
           </h2>
           <p className="love-quote text-xl max-w-2xl mx-auto">
             I've prepared something extra special - a personal message just for you, 
@@ -19,55 +19,39 @@ const VideoMessage = () => {
 
         {/* Video/Audio Message Area */}
         <div className="romantic-card p-8 mb-8">
-          {!showVideoPlaceholder ? (
+          {!showVideo ? (
             <div 
               className="relative bg-gradient-sunset rounded-lg p-12 cursor-pointer group"
-              onClick={() => setShowVideoPlaceholder(true)}
+              onClick={() => setShowVideo(true)}
+              style={{ maxWidth: '340px', margin: '0 auto', aspectRatio: '9/16' }}
             >
-              <div className="flex flex-col items-center">
-                <div className="relative mb-6">
-                  <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <div className="flex flex-col items-center justify-center" style={{ width: '100%', height: '100%' }}>
+                <div className="relative mb-6 w-full h-full flex items-center justify-center" style={{ aspectRatio: '9/16', minHeight: '320px' }}>
+                  <div className="w-24 h-40 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style={{ aspectRatio: '9/16', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <Play className="w-10 h-10 text-white ml-1" />
                   </div>
-                  <div className="absolute inset-0 bg-white/10 rounded-full animate-gentle-pulse"></div>
+                  <div className="absolute inset-0 bg-white/10 rounded-xl animate-gentle-pulse" style={{ aspectRatio: '9/16' }}></div>
                 </div>
                 <h3 className="elegant-heading text-2xl font-semibold text-white mb-2">
-                  Click to Play My Birthday Message
+                  Click to Play Video
                 </h3>
                 <p className="text-white/80">
-                  A heartfelt video message recorded just for your special day ✨
+                  A heartfelt video recorded just for your special day ✨
                 </p>
               </div>
-              
               {/* Decorative hearts */}
               <Heart className="absolute top-4 right-4 text-white/30 w-6 h-6" />
               <Heart className="absolute bottom-4 left-4 text-white/30 w-4 h-4" />
             </div>
           ) : (
             <div className="relative bg-black rounded-lg overflow-hidden">
-              {/* Placeholder for actual video */}
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <div className="text-center">
-                  <Camera className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <p className="text-lg text-muted-foreground">
-                    Replace this with your actual video/audio message
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    You can embed YouTube, Vimeo, or upload your own media
-                  </p>
-                </div>
-              </div>
-              
-              {/* Video controls placeholder */}
-              <div className="absolute bottom-4 left-4 right-4 bg-black/50 rounded p-2 flex items-center">
-                <button className="text-white mr-4">
-                  <Play className="w-5 h-5" />
-                </button>
-                <div className="flex-1 bg-white/20 rounded-full h-1 mr-4">
-                  <div className="bg-primary h-full rounded-full w-1/3"></div>
-                </div>
-                <span className="text-white text-sm">2:35</span>
-              </div>
+              <video
+                src={"/src/assets/LK.mp4"}
+                controls
+                autoPlay
+                className="w-full"
+                style={{ aspectRatio: '9/16', maxHeight: '520px', borderRadius: '1rem', background: '#000' }}
+              />
             </div>
           )}
         </div>
