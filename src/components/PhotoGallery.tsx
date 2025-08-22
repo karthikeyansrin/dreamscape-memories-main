@@ -47,14 +47,31 @@ const photos = [
   },
   {
     id: 8,
-    url: "/Imgs/Img8.jpg",
-    caption: "Still making me fall in love with you over and over 💕",
+    url: "/Imgs/Img9.jpg",
+    caption: "Clicked by praga 🎉",
     category: "achievements"
   },
   {
     id: 9,
-    url: "/Imgs/Img9.jpg",
-    caption: "This one's special 🌟",
+    url: "/Imgs/Img10.jpg",
+    caption: "Still making me fall in love with you over and over 💕",
+    category: "recent"
+  },{
+    id: 10,
+    url: "/Imgs/Img13.jpg",
+    caption: "Holding on to each other 🎉",
+    category: "us"
+  },
+  {
+    id: 11,
+    url: "/Imgs/Img14.jpg",
+    caption: "A moment to be paused 🗺️",
+    category: "achievements"
+  },
+  {
+    id: 12,
+    url: "/Imgs/Img11.jpg",
+    caption: "My other half 💕",
     category: "recent"
   }
 ];

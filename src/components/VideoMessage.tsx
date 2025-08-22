@@ -12,7 +12,7 @@ const VideoMessage = () => {
             A Special Video for You
           </h2>
           <p className="love-quote text-xl max-w-2xl mx-auto">
-            I've prepared something extra special - a personal message just for you, 
+            I've prepared something extra special - a compilation, 
             straight from my heart to yours.
           </p>
         </div>
@@ -33,10 +33,10 @@ const VideoMessage = () => {
                   <div className="absolute inset-0 bg-white/10 rounded-xl animate-gentle-pulse" style={{ aspectRatio: '9/16' }}></div>
                 </div>
                 <h3 className="elegant-heading text-2xl font-semibold text-white mb-2">
-                  Click to Play Video
+                  Click to Play
                 </h3>
                 <p className="text-white/80">
-                  A heartfelt video recorded just for your special day ✨
+                  A heartfelt video, just for your special day ✨
                 </p>
               </div>
               {/* Decorative hearts */}
